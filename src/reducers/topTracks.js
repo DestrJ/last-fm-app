@@ -4,7 +4,7 @@ const initialState = {
     tracks: null,
     loading: false,
     page: 1,
-    limit: 5
+    totalPage: 20
 };
 
 const topTracksReducer = (state = initialState, action) => {
@@ -15,10 +15,12 @@ const topTracksReducer = (state = initialState, action) => {
                 loading: true
             };
         case TOP_TRACKS_LOADED:
+            const totalPages = Number.parseInt(action.payload['@attr'].totalPages);
             return {
                 ...state,
                 loading: false,
-                tracks: action.payload
+                tracks: action.payload.track,
+                totalPage: totalPages
             };
         case SET_TRACKS_CURRENT_PAGE:
             return {

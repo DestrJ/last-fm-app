@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ac269da-6a33-4408-8364-3b39fbfdd2bd" name="Default Changelist" comment="topTracksReducer">
-      <change afterPath="$PROJECT_DIR$/src/helper/apiHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/topTracks.js" afterDir="false" />
+    <list default="true" id="9ac269da-6a33-4408-8364-3b39fbfdd2bd" name="Default Changelist" comment="Added some components and container.">
+      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/TopTracks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/topTracks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/topTracks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/boundActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/boundActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/apiHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/apiHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/topTracks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/topTracks.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581150184770</updated>
-      <workItem from="1581150186526" duration="12240000" />
+      <workItem from="1581150186526" duration="20365000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1581150394899</created>
@@ -112,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581158421403</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added topTracksReducer.">
+      <created>1581171500296</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581171500296</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,13 +155,15 @@
     <MESSAGE value="Create actions" />
     <MESSAGE value="Bound actions" />
     <MESSAGE value="topTracksReducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="topTracksReducer" />
+    <MESSAGE value="Added topTracksReducer." />
+    <MESSAGE value="Added some components and container." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some components and container." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2" timestamp="1581171424821">
+    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2" timestamp="1581181324528">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1581171424821" />
+    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1581181324528" />
     <state x="97" y="100" width="1726" height="847" key="DiffContextDialog" timestamp="1581158552648">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
