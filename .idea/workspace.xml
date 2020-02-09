@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ac269da-6a33-4408-8364-3b39fbfdd2bd" name="Default Changelist" comment="Added some components and container.">
-      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/TopTracks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+    <list default="true" id="9ac269da-6a33-4408-8364-3b39fbfdd2bd" name="Default Changelist" comment="Top tracks listing with pagination done.">
+      <change afterPath="$PROJECT_DIR$/src/components/Track.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Tracks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/boundActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/boundActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/apiHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/apiHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/TopTracks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopTracks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/topTracks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/topTracks.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +86,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581150184770</updated>
-      <workItem from="1581150186526" duration="20365000" />
+      <workItem from="1581150186526" duration="27705000" />
+      <workItem from="1581242978167" duration="2944000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1581150394899</created>
@@ -123,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581171500296</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added some components and container.">
+      <created>1581181451932</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581181451932</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +145,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -157,13 +160,14 @@
     <MESSAGE value="topTracksReducer" />
     <MESSAGE value="Added topTracksReducer." />
     <MESSAGE value="Added some components and container." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some components and container." />
+    <MESSAGE value="Top tracks listing with pagination done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Top tracks listing with pagination done." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2" timestamp="1581181324528">
+    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2" timestamp="1581245927509">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1581181324528" />
+    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1581245927509" />
     <state x="97" y="100" width="1726" height="847" key="DiffContextDialog" timestamp="1581158552648">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -176,5 +180,9 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="810" y="442" width="296" height="160" key="VCS.ChangelistChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1581158484806" />
+    <state x="653" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1581242978194">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="653" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1581242978194" />
   </component>
 </project>
