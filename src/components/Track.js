@@ -1,17 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {getImageFromArray} from "../helper/commonHelper";
 
 const Track = ({track}) => {
-
-    let image = '';
-    if (track.image.length) {
-        const imageUrl = track.image[(track.image.length - 1)]['#text'];
-
-        if ( imageUrl !== undefined ) {
-            image = (<img src={imageUrl} alt={track.name} />);
-        }
-    }
-
+    const image = getImageFromArray(track.image, track.name);
     const artistSlug = '/artist/' + track.artist.name.replace(/ /g, '+');
 
     return (

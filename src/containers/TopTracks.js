@@ -11,7 +11,6 @@ class TopTracks extends React.Component {
         loading: PropTypes.bool.isRequired,
         currentPage: PropTypes.number.isRequired,
         totalPage: PropTypes.number.isRequired,
-        // limit: PropTypes.number.isRequired,
         boundGetTracks: PropTypes.func.isRequired,
         boundSetTracksCurrentPage: PropTypes.func.isRequired
     };

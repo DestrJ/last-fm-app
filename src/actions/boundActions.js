@@ -19,5 +19,6 @@ export const boundGetArtist = name => dispatch => {
     dispatch(artistLoading());
 
     axios.get(getArtistRequestString(name))
-        .then(res => getArtist(res.payload));
+        // .then(res => console.log(res.data))
+        .then(res => dispatch(getArtist(res.data.artist)));
 };
