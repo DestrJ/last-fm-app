@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import {boundGetTracks, boundSetTracksCurrentPage} from "../actions/boundActions";
 import Tracks from "../components/Tracks";
 import ReactPaginate from 'react-paginate';
+import '../assets/top-tracks.scss'
 
 class TopTracks extends React.Component {
     static propTypes = {

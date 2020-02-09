@@ -9,15 +9,15 @@ const Track = ({track}) => {
     return (
         <div className="track">
             {image}
-            <h4 className="track__name">{track.name}</h4>
-            <h6 className="track__artist-link">
+            <h3 className="track__name">{track.name}</h3>
+            <h4 className="track__artist-link">
                 <Link to={artistSlug}>{track.artist.name}</Link>
-            </h6>
-            <h6 className="track__singer">
+            </h4>
+            <h4 className="track__singer">
                 <a href={track.artist.url}>
                     Last FM
                 </a>
-            </h6>
+            </h4>
         </div>
     );
 };

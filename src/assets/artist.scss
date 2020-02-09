@@ -1,0 +1,25 @@
+.artist {
+    &__name {
+
+    }
+    &__tags {
+        margin-top: 10px;
+        transform: translateX(-16px);
+
+        li {
+            display: inline-block;
+            margin-left: 16px;
+            margin-top: 10px;
+
+            a {
+                text-transform: capitalize;
+            }
+        }
+    }
+    &__content {
+        p {
+            line-height: 1.6;
+            word-wrap: break-word;
+        }
+    }
+}

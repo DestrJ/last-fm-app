@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {boundGetArtist} from "../actions/boundActions";
 import {getImageFromArray} from "../helper/commonHelper";
+import '../assets/artist.scss'
 
 class Artist extends React.Component {
     static propTypes = {
@@ -13,8 +14,6 @@ class Artist extends React.Component {
 
     componentDidMount() {
         const artistName = this.props.match && this.props.match.params && this.props.match.params.name;
-        // console.log(artistName);
-        // console.log(this.props.match);
         this.props.boundGetArtist(artistName);
     }
 
@@ -25,24 +24,28 @@ class Artist extends React.Component {
         const artist = this.props.artist != null && this.props.artist;
 
         if ( artist === false ) {
-            return <h2>This author does not exists</h2>;
+            return <h2>This artist does not exists</h2>;
         }
 
         const image = getImageFromArray(artist.image, artist.name);
 
         return (
             <div className="artist">
-                <h2 className="artist__name">{artist.name}</h2>
+                <h1 className="artist__name">{artist.name}</h1>
                 {image}
-                <div className="artist__tags">
+                <ul className="artist__tags">
                     {
                         artist.tags && artist.tags.tag.map(tag => (
-                            <a key={tag.name} href={tag.url}>{tag.name}</a>
+                            <li  key={tag.name}>
+                                <a href={tag.url}>{tag.name}</a>
+                            </li>
                         ))
                     }
-                </div>
+                </ul>
                 <div className="artist__content">
-                    {artist.bio && artist.bio.content}
+                    <p>
+                        {artist.bio && artist.bio.content}
+                    </p>
                 </div>
             </div>
         );

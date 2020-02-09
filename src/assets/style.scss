@@ -1,0 +1,54 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-fonts;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $main-fonts;
+    font-weight: 700;
+}
+
+a {
+    cursor: pointer;
+    transition: 0.3s all ease;
+    color: $primary;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        color: $dark;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto 50px;
+    padding: 0 15px;
+
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
