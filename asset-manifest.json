@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/last-fm-app/static/css/main.6b0f4051.chunk.css",
-    "main.js": "/last-fm-app/static/js/main.8ffa00f3.chunk.js",
-    "main.js.map": "/last-fm-app/static/js/main.8ffa00f3.chunk.js.map",
+    "main.js": "/last-fm-app/static/js/main.97af82df.chunk.js",
+    "main.js.map": "/last-fm-app/static/js/main.97af82df.chunk.js.map",
     "runtime-main.js": "/last-fm-app/static/js/runtime-main.0ac96214.js",
     "runtime-main.js.map": "/last-fm-app/static/js/runtime-main.0ac96214.js.map",
     "static/js/2.36b23daa.chunk.js": "/last-fm-app/static/js/2.36b23daa.chunk.js",
     "static/js/2.36b23daa.chunk.js.map": "/last-fm-app/static/js/2.36b23daa.chunk.js.map",
     "index.html": "/last-fm-app/index.html",
-    "precache-manifest.bfe63184933ad0b28ce0876d8af55739.js": "/last-fm-app/precache-manifest.bfe63184933ad0b28ce0876d8af55739.js",
+    "precache-manifest.c91b2d13dd9b80af8c08d62f2cf9f883.js": "/last-fm-app/precache-manifest.c91b2d13dd9b80af8c08d62f2cf9f883.js",
     "service-worker.js": "/last-fm-app/service-worker.js",
     "static/css/main.6b0f4051.chunk.css.map": "/last-fm-app/static/css/main.6b0f4051.chunk.css.map",
     "static/js/2.36b23daa.chunk.js.LICENSE.txt": "/last-fm-app/static/js/2.36b23daa.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0ac96214.js",
     "static/js/2.36b23daa.chunk.js",
     "static/css/main.6b0f4051.chunk.css",
-    "static/js/main.8ffa00f3.chunk.js"
+    "static/js/main.97af82df.chunk.js"
   ]
 }
