@@ -7,8 +7,8 @@ const Main = () => {
     return (
         <main>
             <Switch>
-                <Route exact path="/" component={TopTracks} />
-                <Route exact path="/artist/:name" component={Artist} />
+                <Route exact path={process.env.PUBLIC_URL + "/"} component={TopTracks} />
+                <Route exact path={process.env.PUBLIC_URL + "/artist/:name"} component={Artist} />
             </Switch>
         </main>
     );

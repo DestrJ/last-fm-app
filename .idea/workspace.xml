@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9ac269da-6a33-4408-8364-3b39fbfdd2bd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Track.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Track.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
       <updated>1581150184770</updated>
       <workItem from="1581150186526" duration="27705000" />
       <workItem from="1581242978167" duration="24486000" />
-      <workItem from="1581353194497" duration="17984000" />
+      <workItem from="1581353194497" duration="18934000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1581150394899</created>
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581372956967</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Changed url from http to https.">
+      <created>1581373379884</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581373379884</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,17 +231,18 @@
     <MESSAGE value="&quot;GitHub Pages&quot; installed" />
     <MESSAGE value="Added homepage url." />
     <MESSAGE value="Commented devtools." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commented devtools." />
+    <MESSAGE value="Changed url from http to https." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed url from http to https." />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="185" width="806" height="674" key="#ESLint" timestamp="1581359443207">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="555" y="185" width="806" height="674" key="#ESLint/0.0.1920.1044@0.0.1920.1044" timestamp="1581359443207" />
-    <state x="574" y="145" width="1049" height="811" key="CommitChangelistDialog2" timestamp="1581372956830">
+    <state x="574" y="145" width="1049" height="811" key="CommitChangelistDialog2" timestamp="1581373379817">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="574" y="145" width="1049" height="811" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1581372956830" />
+    <state x="574" y="145" width="1049" height="811" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1581373379817" />
     <state x="97" y="100" width="1726" height="847" key="DiffContextDialog" timestamp="1581158552648">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>

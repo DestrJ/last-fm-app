@@ -6,7 +6,7 @@ const Track = ({trackName, artistName, trackImage, lastFmUrl}) => {
     const image = getImageFromArray(trackImage, trackName);
     let artistHtml = '';
     if ( artistName ) {
-        const artistSlug = '/artist/' + artistName.replace(/ /g, '+');
+        const artistSlug = process.env.PUBLIC_URL + '/artist/' + artistName.replace(/ /g, '+');
         artistHtml = (
             <h4 className="track__artist-link">
                 <Link to={artistSlug}>{artistName}</Link>
