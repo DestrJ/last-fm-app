@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b0f4051.chunk.css",
-    "main.js": "/static/js/main.e4d10802.chunk.js",
-    "main.js.map": "/static/js/main.e4d10802.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.dc991cf5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.dc991cf5.js.map",
-    "static/js/2.36b23daa.chunk.js": "/static/js/2.36b23daa.chunk.js",
-    "static/js/2.36b23daa.chunk.js.map": "/static/js/2.36b23daa.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.5f5f73dc7d2d613a7a9c29d585a66708.js": "/precache-manifest.5f5f73dc7d2d613a7a9c29d585a66708.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.6b0f4051.chunk.css.map": "/static/css/main.6b0f4051.chunk.css.map",
-    "static/js/2.36b23daa.chunk.js.LICENSE.txt": "/static/js/2.36b23daa.chunk.js.LICENSE.txt"
+    "main.css": "/last-fm-app/static/css/main.6b0f4051.chunk.css",
+    "main.js": "/last-fm-app/static/js/main.e4d10802.chunk.js",
+    "main.js.map": "/last-fm-app/static/js/main.e4d10802.chunk.js.map",
+    "runtime-main.js": "/last-fm-app/static/js/runtime-main.0ac96214.js",
+    "runtime-main.js.map": "/last-fm-app/static/js/runtime-main.0ac96214.js.map",
+    "static/js/2.36b23daa.chunk.js": "/last-fm-app/static/js/2.36b23daa.chunk.js",
+    "static/js/2.36b23daa.chunk.js.map": "/last-fm-app/static/js/2.36b23daa.chunk.js.map",
+    "index.html": "/last-fm-app/index.html",
+    "precache-manifest.17a59de9bd1ba0f62209d9b01ba93bb7.js": "/last-fm-app/precache-manifest.17a59de9bd1ba0f62209d9b01ba93bb7.js",
+    "service-worker.js": "/last-fm-app/service-worker.js",
+    "static/css/main.6b0f4051.chunk.css.map": "/last-fm-app/static/css/main.6b0f4051.chunk.css.map",
+    "static/js/2.36b23daa.chunk.js.LICENSE.txt": "/last-fm-app/static/js/2.36b23daa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.dc991cf5.js",
+    "static/js/runtime-main.0ac96214.js",
     "static/js/2.36b23daa.chunk.js",
     "static/css/main.6b0f4051.chunk.css",
     "static/js/main.e4d10802.chunk.js"
