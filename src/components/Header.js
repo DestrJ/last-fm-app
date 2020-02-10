@@ -9,7 +9,7 @@ const Header = () => {
             <nav className="page-nav">
                 <ul>
                     <li>
-                        <NavLink exact to="/" >Home</NavLink>
+                        <NavLink exact to={process.env.PUBLIC_URL + "/"} >Home</NavLink>
                     </li>
                 </ul>
             </nav>
