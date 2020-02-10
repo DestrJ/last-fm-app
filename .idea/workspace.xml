@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ac269da-6a33-4408-8364-3b39fbfdd2bd" name="Default Changelist" comment="Added styles">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/artist.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/top-tracks.scss" afterDir="false" />
+    <list default="true" id="9ac269da-6a33-4408-8364-3b39fbfdd2bd" name="Default Changelist" comment="Added search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/boundActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/boundActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/topTracks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/topTracks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/top-tracks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/top-tracks.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Track.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Track.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Artist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tracks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tracks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/TopTracks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopTracks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helper/apiHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/apiHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/artist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/topTracks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/topTracks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +59,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -107,7 +108,8 @@
       <option name="presentableId" value="Default" />
       <updated>1581150184770</updated>
       <workItem from="1581150186526" duration="27705000" />
-      <workItem from="1581242978167" duration="24190000" />
+      <workItem from="1581242978167" duration="24486000" />
+      <workItem from="1581353194497" duration="15486000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1581150394899</created>
@@ -158,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581261128595</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added styles">
+      <created>1581283355908</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581283355908</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,13 +206,18 @@
     <MESSAGE value="Top tracks listing with pagination done." />
     <MESSAGE value="Single artist page done." />
     <MESSAGE value="Added styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added styles" />
+    <MESSAGE value="Added search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added search" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2" timestamp="1581283322680">
+    <state x="555" y="185" width="806" height="674" key="#ESLint" timestamp="1581359443207">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1581283322680" />
+    <state x="555" y="185" width="806" height="674" key="#ESLint/0.0.1920.1044@0.0.1920.1044" timestamp="1581359443207" />
+    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2" timestamp="1581370831787">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="571" y="116" width="1049" height="811" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1581370831787" />
     <state x="97" y="100" width="1726" height="847" key="DiffContextDialog" timestamp="1581158552648">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -220,9 +234,13 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="810" y="442" width="296" height="160" key="VCS.ChangelistChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1581158484806" />
-    <state x="653" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1581242978194">
+    <state x="653" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1581353193244">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="653" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1581242978194" />
+    <state x="653" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1581353193244" />
+    <state x="646" y="263" width="628" height="520" key="find.popup" timestamp="1581366481128">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="646" y="263" width="628" height="520" key="find.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1581366481128" />
   </component>
 </project>

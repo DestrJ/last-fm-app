@@ -1,7 +1,20 @@
 import axios from "axios";
-import {getTracks, tracksLoading, setTracksCurrentPage, getTracksSearch} from "./topTracks";
-import {artistLoading, getArtist} from "./artist";
-import {getTopTracksRequestString, getArtistRequestString, getTopTracksSearchRequestString} from "../helper/apiHelper";
+import {
+    getTracks,
+    tracksLoading,
+    setTracksCurrentPage,
+    getTracksSearch,
+    setTopTracksSearchString
+} from "./topTracks";
+import {
+    artistLoading,
+    getArtist
+} from "./artist";
+import {
+    getTopTracksRequestString,
+    getArtistRequestString,
+    getTopTracksSearchRequestString
+} from "../helper/apiHelper";
 
 export const boundGetTracks = (page, limit) => dispatch => {
     dispatch(tracksLoading());
@@ -10,16 +23,19 @@ export const boundGetTracks = (page, limit) => dispatch => {
         .then(res => dispatch(getTracks(res.data.tracks)));
 };
 
-export const boundGetTracksSearch = (page, searchTrack, limit) => dispatch => {
+export const boundGetSearchTracks = (page, searchTrack, limit) => dispatch => {
     dispatch(tracksLoading());
 
     axios.get(getTopTracksSearchRequestString(page, searchTrack, limit))
-        .then(res => console.log(res.data))
-        .then(res => dispatch(getTracksSearch(res.data)));
+        .then(res => dispatch(getTracksSearch(res.data.results)));
 };
 
 export const boundSetTracksCurrentPage = page => dispatch => {
     dispatch(setTracksCurrentPage(page));
+};
+
+export const boundSetTopTracksSearchQuery = query => dispatch => {
+    dispatch(setTopTracksSearchString(query));
 };
 
 export const boundGetArtist = name => dispatch => {

@@ -13,7 +13,6 @@ const artistReducer = (state = initialState, action) => {
                 loading: true
             };
         case ARTIST_LOADED:
-            // console.log(action.payload);
             return {
                 ...state,
                 artist: action.payload,

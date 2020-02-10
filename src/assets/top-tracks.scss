@@ -84,7 +84,34 @@ ul.pagination {
         margin: 0 0 16px;
     }
 
-    &__singer {
+    &__last-fm-link {
         margin: 0 0 10px;
+    }
+}
+
+.search-form {
+    input {
+        max-width: 320px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $dark;
+    }
+    button {
+        transition: 0.3s all ease;
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid $dark;
+        color: $dark;
+        background-color: transparent;
+
+        &:hover {
+            color: $white;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+
+    > * {
+        margin-top: 14px;
     }
 }

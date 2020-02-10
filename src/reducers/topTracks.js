@@ -1,11 +1,22 @@
-import {TOP_TRACKS_LOADING, TOP_TRACKS_LOADED, SET_TRACKS_CURRENT_PAGE} from "../actions/types";
-import {TOP_TRACKS_LISTING_LIMIT, MAX_TOTAL_PAGES, MAX_TOTAL_PAGES_DEFAULT} from "../config/api";
+import {
+    TOP_TRACKS_LOADING,
+    TOP_TRACKS_LOADED,
+    SET_TRACKS_CURRENT_PAGE,
+    TOP_TRACKS_SEARCH_LOADED,
+    SET_TOP_TRACKS_SEARCH_STRING
+} from "../actions/types";
+import {
+    TOP_TRACKS_LISTING_LIMIT,
+    MAX_TOTAL_PAGES,
+    MAX_TOTAL_PAGES_DEFAULT
+} from "../config/api";
 
 const initialState = {
     tracks: null,
     loading: false,
     page: 1,
-    totalPage: 20
+    totalPage: 20,
+    searchQuery: ''
 };
 
 const topTracksReducer = (state = initialState, action) => {
@@ -32,6 +43,22 @@ const topTracksReducer = (state = initialState, action) => {
             return {
                 ...state,
                 page: action.page
+            };
+        case TOP_TRACKS_SEARCH_LOADED:
+            const totalSearchResults = action.payload['opensearch:totalResults'];
+            const totalSearchPage = MAX_TOTAL_PAGES ? MAX_TOTAL_PAGES : Math.floor(totalSearchResults / TOP_TRACKS_LISTING_LIMIT);
+            const searchTracks = action.payload.trackmatches.track.length > TOP_TRACKS_LISTING_LIMIT ?
+                action.payload.trackmatches.track.slice(0, TOP_TRACKS_LISTING_LIMIT ): action.payload.trackmatches.track;
+            return {
+                ...state,
+                loading: false,
+                tracks: searchTracks,
+                totalPage: totalSearchPage
+            };
+        case SET_TOP_TRACKS_SEARCH_STRING:
+            return {
+                ...state,
+                searchQuery: action.searchQuery
             };
         default:
             return state;
